@@ -27,13 +27,15 @@
 Запустить контейнер с нашим образом:  
 `docker run -p 8080:8080 docker.io/library/rate`
 ## Endpoints
+
 `/api/gif`  
 Возвращает гифку в зависимости от курса валют  
 **Parameters**  
 symbols: string (RUB)  
 **Пример**  
-http://localhost:8080/api/gif?symbols=RUB  
+`http://localhost:8080/api/gif?symbols=RUB`
+
 `/api/*`  
 Возвращает гифку в зависимости от курса валюты (RUB)  
 **Пример**  
-`http://localhost:8080/`  
+`http://localhost:8080/api/`  
